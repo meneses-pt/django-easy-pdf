@@ -9,9 +9,9 @@ from django.conf import settings
 from django.template import loader
 from django.http import HttpResponse
 from django.utils.http import urlquote
-from django.utils.six import BytesIO
 
 import xhtml2pdf.default
+from six import BytesIO
 from xhtml2pdf import pisa
 
 from .exceptions import UnsupportedMediaPathException, PDFRenderingError
